@@ -1,0 +1,27 @@
+This is the docs explaining about the Calculator.java file
+
+# Calculator Documentation
+This document provides an overview of the `Calculator.java` file, which implements basic arithmetic operations.
+
+the Calculator can do addition and subtraction for two or more numbers also division and multiplication are supported as well. 
+
+It also can do basic math operations like square root, factorial etc...
+
+it also can find the percentage of a number from another number
+
+example: if you have a number say 100 then how much is 50% of that number? this calculator will answer your question in seconds and it's free to use.
+
+also it can perform long operations 
+examples:-1+9*-3/2-5*6=0
+- (1+9)*(-3/2)-5*6=-40.5
+
+it is completely build using java frame work i used swing components and also used some other libraries like math, string etc...
+
+i took example from windows calculator
+
+For some complex features i used some online resources to learn about the feature so that i can implement it in my code.
+like stackoverflow or google for more information about a particular topic or feature.
+
+future idea
+-----------
+in future my plan is to make it smart calculator with more advanced functions and also add support for different programming languages like java, c++, python etc...
