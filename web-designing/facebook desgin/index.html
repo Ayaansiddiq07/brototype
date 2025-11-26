@@ -1,0 +1,87 @@
+  <!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Facebook — Log In or Sign Up</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <header class="topbar">
+        <div class="container topbar-inner">
+            <div class="brand">
+                <div class="logo">f</div>
+                <div class="brand-name">facebook</div>
+            </div>
+            <form class="login-form" autocomplete="off" aria-label="Login form">
+                <input name="email" type="text" placeholder="Email or phone" />
+                <input name="pass" type="password" placeholder="Password" />
+                <button type="submit" class="btn primary">Log In</button>
+                <a class="forgot" href="#">Forgotten password?</a>
+            </form>
+        </div>
+    </header>
+
+    <main class="hero">
+        <div class="container hero-inner">
+            <section class="hero-left">
+                <h1>Connect with friends and the world around you on Facebook.</h1>
+                <ul class="features">
+                    <li><strong>See photos and updates</strong> from friends in News Feed</li>
+                    <li><strong>Share what's new</strong> or video chat with family</li>
+                    <li><strong>Find communities</strong> that share your interests</li>
+                </ul>
+            </section>
+
+            <aside class="signup-card" aria-labelledby="create-heading">
+                <div class="card">
+                    <h2 id="create-heading">Create an account</h2>
+                    <p class="small">It's quick and easy.</p>
+
+                    <form class="signup-form" autocomplete="off">
+                        <div class="row">
+                            <input placeholder="First name" />
+                            <input placeholder="Surname" />
+                        </div>
+                        <input placeholder="Mobile number or email address" />
+                        <input placeholder="New password" type="password" />
+                        <div class="row dob">
+                            <label>Birthday</label>
+                            <div class="dob-row">
+                                <select aria-label="day"><option>Day</option></select>
+                                <select aria-label="month"><option>Month</option></select>
+                                <select aria-label="year"><option>Year</option></select>
+                            </div>
+                        </div>
+
+                        <div class="row gender">
+                            <label><input type="radio" name="gender" /> Female</label>
+                            <label><input type="radio" name="gender" /> Male</label>
+                            <label><input type="radio" name="gender" /> Custom</label>
+                        </div>
+
+                        <button type="submit" class="btn sign-up">Sign Up</button>
+                    </form>
+
+                    <p class="terms">By clicking Sign Up you agree to our Terms, Data Policy and Cookies Policy.</p>
+                </div>
+
+                <div class="learn-more">Create a Page for a celebrity, band or business.</div>
+            </aside>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <ul class="langs">
+                <li><a href="#">English (UK)</a></li>
+                <li><a href="#">हिन्दी</a></li>
+                <li><a href="#">Español</a></li>
+                <li><a href="#">Français (France)</a></li>
+                <li><a href="#">More</a></li>
+            </ul>
+            <div class="copyright">Facebook © 2025</div>
+        </div>
+    </footer>
+</body>
+</html>

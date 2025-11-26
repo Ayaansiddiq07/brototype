@@ -1,0 +1,124 @@
+:root{
+    --fb-blue:#1877f2;
+    --card-bg:#fff;
+    --muted:#65676b;
+    --container-max:980px;
+}
+
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+    margin:0;
+    font-family: Helvetica, Arial, sans-serif;
+    background: #f0f2f5;
+    color:#1c1e21;
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:grayscale;
+}
+
+
+.container{
+    max-width:var(--container-max);
+    margin:0 auto;
+    padding:0 18px;
+}
+
+
+.topbar{
+    background: linear-gradient(180deg,var(--fb-blue),#165fde);
+    color:#fff;
+    padding:18px 0;
+}
+.topbar-inner{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}
+.brand{display:flex;align-items:center;gap:10px}
+.logo{
+    width:36px;height:36px;border-radius:6px;
+    background:#fff;color:var(--fb-blue);
+    display:flex;align-items:center;justify-content:center;
+    font-weight:700;font-size:20px;
+}
+.brand-name{
+    font-weight:700;font-size:20px;text-transform:lowercase;
+}
+
+
+.login-form{
+    display:flex;
+    align-items:center;
+    gap:8px;
+}
+.login-form input{
+    height:36px;padding:0 10px;border-radius:6px;border:1px solid rgba(0,0,0,0.08);
+    background:rgba(255,255,255,0.95);
+}
+.login-form .btn{
+    background:#0f5bd5;color:#fff;padding:8px 12px;border-radius:6px;border:none;
+    font-weight:600;cursor:pointer;
+}
+.login-form .forgot{
+    font-size:12px;color:rgba(255,255,255,0.85);margin-left:8px;text-decoration:underline;
+}
+
+.hero{
+    padding:48px 0;
+}
+.hero-inner{
+    display:flex;
+    gap:36px;
+    align-items:flex-start;
+    justify-content:space-between;
+}
+.hero-left{flex:1;min-width:280px}
+.hero-left h1{
+    font-size:44px;line-height:1.05;margin:0 0 18px;color:#050505;
+    font-weight:700;
+}
+.features{list-style:none;padding:0;margin:0;color:var(--muted)}
+.features li{margin-bottom:10px;font-size:16px}
+
+
+
+.signup-card{width:420px;flex:0 0 420px}
+.card{
+    background:var(--card-bg);padding:18px;border-radius:10px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+    border:1px solid rgba(0,0,0,0.06);
+}
+.card h2{margin:2px 0 6px;font-size:26px}
+.card .small{color:var(--muted);margin-bottom:10px;font-size:14px}
+.row{display:flex;gap:8px;margin-bottom:10px}
+.row input, .signup-form input, .signup-form select{
+    flex:1;height:44px;padding:0 12px;border-radius:8px;border:1px solid rgba(0,0,0,0.08);
+    background:#fff;outline:none;
+}
+.row input:first-child{flex:1}
+
+
+.dob label{font-size:13px;color:var(--muted);margin-bottom:6px;display:block;padding: 16px;}
+.dob-row select{height:36px;border-radius:6px;padding:0 8px;border:1px solid rgba(0,0,0,0.08)}
+.gender label{display:inline-flex;align-items:center;gap:8px;font-size:14px;margin-right:8px}
+
+.btn{display:inline-block;padding:10px 14px;border-radius:8px;cursor:pointer;border:none;font-weight:700}
+.btn.primary{background:var(--fb-blue);color:#fff}
+.btn.sign-up{background:#42b72a;color:#fff;width:100%;margin-top:6px}
+
+.terms{color:#90949c;font-size:12px;margin-top:12px}
+.learn-more{margin-top:14px;color:#365899;font-weight:600;font-size:14px}
+.footer{padding:28px 0}
+.footer .langs{display:flex;gap:12px;flex-wrap:wrap;list-style:none;padding:0;margin:0 0 10px}
+.footer a{color:var(--muted);text-decoration:none;font-size:13px}
+.footer .copyright{color:var(--muted);font-size:13px}
+
+
+@media (max-width: 980px){
+    .hero-inner{flex-direction:column-reverse;align-items:center}
+    .signup-card{width:100%;max-width:420px}
+    .login-form{display:none}
+    .hero-left h1{font-size:32px;text-align:center}
+    .topbar-inner{justify-content:center}
+    .brand{margin-left:6px}
+}
