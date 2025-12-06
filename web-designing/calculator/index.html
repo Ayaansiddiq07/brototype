@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Simple Calculator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="calculator_container">
+    <div class="calculator">
+      <div class="display" aria-live="polite">
+        <div class="previous" id="previous"> </div>
+        <div class="current" id="current">0</div>
+      </div>
+
+      <div class="buttons">
+        <button class="btn button_clear" data-action="clear">C</button>
+        <button class="btn button_delete" data-action="delete">⌫</button>
+        <button class="btn button_operator" data-action="/">÷</button>
+        <button class="btn button_operator" data-action="*">×</button>
+
+        <button class="btn button_number">7</button>
+        <button class="btn button_number">8</button>
+        <button class="btn button_number">9</button>
+        <button class="btn button_operator" data-action="-">−</button>
+
+        <button class="btn button_number">4</button>
+        <button class="btn button_number">5</button>
+        <button class="btn button_number">6</button>
+        <button class="btn button_operator" data-action="+">+</button>
+
+        <button class="btn button_number">1</button>
+        <button class="btn button_number">2</button>
+        <button class="btn button_number">3</button>
+        <button class="btn button_equals" data-action="equals">=</button>
+
+        <button class="btn button_number zero">0</button>
+        <button class="btn button_dot">.</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
