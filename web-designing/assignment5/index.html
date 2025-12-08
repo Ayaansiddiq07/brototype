@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="btn">Click me</button>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <div id="box" style="width:100px; height:100px; background-color:red; margin-top:20px;"></div>
+    <script>
+        $(document).ready(function(){
+            $("#btn").click(function(){
+                alert("Button clicked!");
+                // $("#box").toggle(3000);
+                $("#box").fadeOut(3000).fadeIn(3000);
+                
+                
+            });
+            $("#btn").mouseover(function(){
+                $(this).css({"background-color":"yellow"});
+            })
+            $("#btn").mouseout(function(){
+                $(this).css({"background-color":""});
+            });
+        });
+
+    </script>
+</body>
+</html>
